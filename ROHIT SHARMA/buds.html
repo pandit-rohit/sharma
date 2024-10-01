@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> buds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="buds.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                <div class="small-images">
+                    <img src="buds1.jpg" onclick="clickimg(this)">
+                    <img src="buds2.jpg" onclick="clickimg(this)">
+                    <img src="buds3.jpg  " onclick="clickimg(this)">
+                    <img src="buds4.jpg" onclick="clickimg(this)">
+
+                </div>
+                 <div class="main-image">
+                    <img src="buds2.jpg" id="imagebox">
+                 </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand"> Brand : Noise</p>
+                    <h2>Buds VS104 Truly Wireless Earbuds with 45H of Playtime, Quad Mic with ENC, Instacharge(10 min=200 min), 13mm Driver,Low Latency, BT v5.2 (Mint Green)</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"> </span>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">&#8377; 1249</p>
+                        <strike>&#8377; 3219</strike>
+                    </div>
+                    <p>Size : <select name="size" >
+                        <option value="select color"> select color</option>
+                        <option value="black"> black</option>
+                        <option value="black"> blue</option>
+                        <option value="black"> green</option>
+                        <option value="black"> purple</option>
+                    </select>
+                    </p>
+                    <p> Quantity <input type="text" value="1"></p>
+                    <button class="button1">
+                        <span class="fa fa-shopping-cart"> </span>
+                        Add to Cart
+                    </button>
+                    <button class="button2">
+                        <span class="fa fa-shopping-cart"></span>
+                        Buy now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickimg(smallImg){
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src
+        }
+    </script>
+</body>
+</html>
